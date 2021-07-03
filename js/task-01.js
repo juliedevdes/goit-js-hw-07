@@ -19,13 +19,13 @@ const getNameAndQuantity = function () {
 
   const categories = document.querySelectorAll('.item');
 
-  for (const category of categories) {
+  categories.forEach(category =>
     console.log(
       `Категория: ${category.querySelector('h2').textContent}, Количество: ${
         category.querySelectorAll('ul li').length
       }`
-    );
-  }
+    )
+  );
 };
 
 getNameAndQuantity();

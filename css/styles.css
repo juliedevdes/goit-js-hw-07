@@ -1,0 +1,9 @@
+#gallery {
+  display: flex;
+  list-style: none;
+}
+
+.gallery-item {
+  justify-content: space-around;
+  margin: 10px;
+}

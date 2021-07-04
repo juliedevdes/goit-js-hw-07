@@ -13,15 +13,5 @@ const arrayOfLi = ingredients.map(ingredient => {
   return newLi;
 });
 
-document
-  .querySelector('#ingredients')
-  .append(
-    arrayOfLi[0],
-    arrayOfLi[1],
-    arrayOfLi[2],
-    arrayOfLi[3],
-    arrayOfLi[4],
-    arrayOfLi[5]
-  );
-
+document.querySelector('#ingredients').append(...arrayOfLi);
 console.log(document.querySelector('#ingredients'));
